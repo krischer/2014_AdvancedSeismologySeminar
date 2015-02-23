@@ -2,14 +2,12 @@
 # -*- coding: utf-8 -*-
 
 
-def lagrange(N, i, x):
+def lagrange2(N, i, x, xi):
     """
-    Function to calculate  Lagrange polynomial for order N and polynomial
-    i[0, N] at location x.
+    Program to calculate  Lagrange polynomial for order N
+    and polynomial i [0, N] at location x at given collacation points xi
+    (not necessarily the GLL-points)
     """
-    from gll import gll
-
-    [xi, weights] = gll(N)
     fac = 1
     for j in range(-1, N):
         if j != i:
