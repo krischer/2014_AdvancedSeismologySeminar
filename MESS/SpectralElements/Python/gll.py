@@ -1,5 +1,6 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
+import numpy as np
 
 
 def gll(N):
@@ -85,4 +86,4 @@ def gll(N):
     else:
         raise NotImplementedError
 
-    return xi, weights
+    return np.array(xi), np.array(weights)
